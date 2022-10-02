@@ -1,0 +1,44 @@
+#root{
+    position: absolute;
+    width: 1058px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    
+}
+.btn{
+    position: absolute;
+    width: 68px;
+    height: 23px;
+    
+    left: 539px;
+    top: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.homebtn{
+    position: absolute;
+    width: 111px;
+    height: 36px;
+    left: 256px;
+    top: 9px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.09em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
