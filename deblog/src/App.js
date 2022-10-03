@@ -5,7 +5,7 @@ import ContactPage from "./page/ContactPage";
 import CulturePage from "./page/CulturePage";
 import MainPage from "./page/MainPage";
 
-function App() {
+function App() { //page로 router지정
   return (
     <BrowserRouter>
       <Routes>
