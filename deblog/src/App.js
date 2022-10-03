@@ -1,21 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./component/menuBar/About";
-import Tech from "./component/menuBar/Tech";
-import Contact from "./component/menuBar/Contact";
-import Culture from "./component/menuBar/Culture";
-import ProjectHome from "./component/menuBar/ProjectHome";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutPage from "./page/AboutPage";
+import TechPage from "./page/TechPage";
+import ContactPage from "./page/ContactPage";
+import CulturePage from "./page/CulturePage";
+import MainPage from "./page/MainPage";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ProjectHome />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Tech" element={<Tech />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Culture" element={<Culture />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Tech" element={<TechPage />} />
+        <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/Culture" element={<CulturePage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
+
 export default App;

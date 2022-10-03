@@ -1,27 +1,25 @@
 import { Link } from "react-router-dom";
-function MenuBar() {
+import classes from "./MenuBar.module.css"
 
+function MenuBar() {
     return (
-        <div>
-            <h4 className="btn">
+        <ul className={classes.bar}>
+            <li className={classes.homebtn}>
+                <Link to="/MainPage"><img src="./image/homeButton.jpg" /></Link>
+            </li>
+            <li className={classes.btn}>
                 <Link to="/About">About</Link>
-            </h4>
-            <h4 className="btn" style={{
-                left: '640px',
-            }}>
+            </li>
+            <li className={classes.btn}>
                 <Link to="/Tech">Tech</Link>
-            </h4>
-            <h4 className="btn" style={{
-                left: '740px',
-            }}>
+            </li>
+            <li className={classes.btn}>
                 <Link to="/Contact">Contact</Link>
-            </h4>
-            <h4 className="btn" style={{
-                left: '840px',
-            }}>
+            </li>
+            <li className={classes.btn}>
                 <Link to="/Culture">Culture</Link>
-            </h4>
-        </div>
+            </li>
+        </ul>
     );
 }
 
