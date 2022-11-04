@@ -1,8 +1,7 @@
-import MenuBar from "../component/menuBar/MenuBar"
+import MenuBar from "../component/menubar/MenuBar.js"
 
 
 const AboutPage = () => {
-    console.log(MenuBar)
     return (
         <MenuBar />
     )

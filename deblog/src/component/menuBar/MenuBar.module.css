@@ -19,6 +19,7 @@ body {
     padding: 0;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 55px;
 }
 
 .PageBtn {
@@ -47,4 +48,10 @@ body {
     height: 48px;
     background-color: #2421A9;
     border-radius: 100%;
+}
+
+@media (max-width: 500px) {
+    .PageBtn {
+        width: 75%;
+    }
 }
