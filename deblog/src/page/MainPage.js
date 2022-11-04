@@ -1,9 +1,13 @@
 import MenuBar from "../component/menuBar/MenuBar"
+import Post from "../component/menuBar/Post"
 
 
 const MainPage = () => {
     return (
-        <MenuBar />
+        <div>
+            <MenuBar />
+            <Post />
+        </div>
     )
 }
 
