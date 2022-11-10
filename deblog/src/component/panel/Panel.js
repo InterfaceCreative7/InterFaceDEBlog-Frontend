@@ -11,6 +11,7 @@ margin-bottom:55px;
 .logo{
     width:400px;
     height:100%;
+    margin-right:5%;
 }
 
 
