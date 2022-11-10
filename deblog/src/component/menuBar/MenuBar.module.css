@@ -7,8 +7,7 @@ body {
 }
 
 .bar {
-    position: static;
-    opacity: 0.8;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
