@@ -4,6 +4,7 @@ import TechPage from "./page/TechPage";
 import ContactPage from "./page/ContactPage";
 import CulturePage from "./page/CulturePage";
 import MainPage from "./page/MainPage";
+import SubmitPage from "./page/SubmitPage";
 
 function App() { //page로 router지정
   return (
@@ -14,6 +15,7 @@ function App() { //page로 router지정
         <Route path="/Tech" element={<TechPage />} />
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/Culture" element={<CulturePage />} />
+        <Route path="/Submit" element={<SubmitPage />} />
       </Routes>
     </BrowserRouter>
   );

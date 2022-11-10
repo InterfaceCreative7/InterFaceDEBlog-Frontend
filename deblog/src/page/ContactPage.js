@@ -3,7 +3,9 @@ import MenuBar from "../component/menubar/MenuBar.js"
 
 const ContactPage = () => {
     return (
-        <MenuBar />
+        <div>
+            <MenuBar />
+        </div>
     )
 }
 
