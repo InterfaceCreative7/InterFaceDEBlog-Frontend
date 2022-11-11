@@ -23,7 +23,7 @@ padding:5px;
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #0336B8;
+    background: #ffb000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
