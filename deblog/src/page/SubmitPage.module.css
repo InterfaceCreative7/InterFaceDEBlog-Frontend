@@ -5,11 +5,11 @@
 }
 
 .write {
-    background-color: aquamarine;
+    background-color: floralwhite;
 }
 
 .show {
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 
 .same {
@@ -32,7 +32,7 @@
     font-size: 1.8rem;
     padding: 0px;
     height: 80%;
-    overflow-y: scroll;
+    overflow-y: auto;
     word-break: break-word;
 }
 
