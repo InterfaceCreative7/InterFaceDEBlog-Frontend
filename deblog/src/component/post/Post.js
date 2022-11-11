@@ -13,7 +13,27 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     width:100%;
 }
 :hover{
-    width:305px;
+
+    width: 305px;
+    display: inline-block;
+  transition-duration: 1.0s;
+  transition-property: transform;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    transform: translateY(-3px);
+    animation-name: hover;
+    animation-duration: 0.5s;
+    animation-delay: $defaultDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+    
 }
 `
 
