@@ -35,12 +35,9 @@ padding:5px;
 `
 
 const Title = (props) => {
-    const ABC = () =>{
-        console.log("asdsad")
-    }
-    return (
-        <Styledtitle>{props.value}</Styledtitle>
-    )
+  return (
+    <Styledtitle>{props.value}</Styledtitle>
+  )
 
 }
 

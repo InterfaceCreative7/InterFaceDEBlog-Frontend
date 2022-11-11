@@ -1,4 +1,4 @@
-import MenuBar from "../component/menuBar/MenuBar.js"
+import MenuBar from "../component/menubar/MenuBar.js"
 import Mapping from "../component/map/Mapping.js"
 import classes from "./ContactPage.module.css"
 
@@ -16,11 +16,11 @@ const ContactPage = () => {
             <div className={classes.chat_r3}> </div>
             <div className={classes.chat_l3}> </div>
             <div className={classes.post}>
-                
+
             </div>
 
         </div>
-        
+
     )
 }
 
