@@ -7,8 +7,7 @@ body {
 }
 
 .bar {
-    position: static;
-    opacity: 0.8;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,9 +22,11 @@ body {
 }
 
 .PageBtn {
+
     width: 40%;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .btn {
@@ -39,7 +40,35 @@ body {
     line-height: 18px;
     text-align: center;
     color: #000000;
+    
+
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+
+
 }
+
+.btn:after{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 5%;
+    position: absolute;
+    background: #514EE4;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+:hover:after { 
+    width: 107%; 
+    left: 0; 
+  }
+
 
 .homebtn {
     border: 0;

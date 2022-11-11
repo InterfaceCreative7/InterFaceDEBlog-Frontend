@@ -3,6 +3,8 @@ import styled from "styled-components"
 const StyledPanel = styled.div`
 display:flex;
 justify-content:center;
+
+align-items:center;
 width:100%;
 height: 216px;
 background: #CCCCCC;
@@ -11,6 +13,8 @@ margin-bottom:55px;
 .logo{
     width:400px;
     height:100%;
+
+    margin-right:5%;
 }
 
 

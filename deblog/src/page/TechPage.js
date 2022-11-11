@@ -1,9 +1,12 @@
 import MenuBar from "../component/menuBar/MenuBar.js"
 
 
+
 const TechPage = () => {
     return (
-        <MenuBar />
+        <div>
+            <MenuBar />
+        </div>
     )
 }
 
