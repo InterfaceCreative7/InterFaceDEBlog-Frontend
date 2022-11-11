@@ -1,4 +1,4 @@
-import MenuBar from "../component/menubar/MenuBar.js"
+import MenuBar from "../component/menuBar/MenuBar.js"
 import Panel from "../component/panel/Panel"
 import dummy from "./dummy.json"
 import Post from "../component/post/Post.js"

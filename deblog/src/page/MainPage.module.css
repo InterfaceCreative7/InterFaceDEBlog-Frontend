@@ -7,9 +7,18 @@
 
 
 .post {
-    width: 70%;
+    width: auto;
     display: flex;
+    text-align: center;
+
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding-left: 13%;
+    align-items: auto;
+    flex-flow: wrap;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left:11%;
+    margin-right:5%;
+    
 }
+
