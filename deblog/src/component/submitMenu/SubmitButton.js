@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledSubmitButton = styled.button`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
@@ -44,7 +45,7 @@ const SubmitButton = (props) => {
     const text = props.text
     return (
         <StyledSubmitButton>
-            {text}
+            <Link to="/Ready" className="ready">{text}</Link>
         </StyledSubmitButton>
     )
 }
