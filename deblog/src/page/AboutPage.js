@@ -1,9 +1,12 @@
 import MenuBar from "../component/menuBar/MenuBar.js"
 
 
+
 const AboutPage = () => {
     return (
-        <MenuBar />
+        <div>
+            <MenuBar />
+        </div>
     )
 }
 
