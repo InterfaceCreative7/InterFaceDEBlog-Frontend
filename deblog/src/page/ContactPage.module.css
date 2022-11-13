@@ -1,4 +1,4 @@
-.chat_r1{
+.chat_r1 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -15,13 +15,14 @@
     border-bottom: none;
 }
 
-.chat_l1{
+.chat_l1 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     padding: 3%;
     width: 40%;
+    height: 100%;
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 70%;
@@ -33,7 +34,7 @@
     border-bottom: none;
 }
 
-.chat_r2{
+.chat_r2 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -51,7 +52,7 @@
     border-bottom: none;
 }
 
-.chat_l2{
+.chat_l2 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -69,7 +70,7 @@
     border-bottom: none;
 }
 
-.chat_r3{
+.chat_r3 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -87,7 +88,7 @@
     border-bottom: none;
 }
 
-.chat_l3{
+.chat_l3 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -105,6 +106,4 @@
     border-bottom: none;
 }
 
-@media(width-max: 500px){
-   
-}
+@media(width-max: 500px) {}
