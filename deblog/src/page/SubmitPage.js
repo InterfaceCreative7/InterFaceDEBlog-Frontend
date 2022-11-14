@@ -4,6 +4,7 @@ import { useState } from "react"
 import remarkGfm from 'remark-gfm'
 import SubmitMenu from "../component/submitMenu/SubmitMenu"
 
+
 const SubmitPage = () => {
     const [title, setTitle] = useState("")
     const [content, setcontent] = useState("")
