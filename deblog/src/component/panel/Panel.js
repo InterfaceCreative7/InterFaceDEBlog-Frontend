@@ -22,7 +22,6 @@ margin-bottom:55px;
     .logo {
         width: 200px;
     }
-
 }
 
 `

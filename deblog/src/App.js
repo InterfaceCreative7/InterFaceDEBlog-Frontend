@@ -13,7 +13,7 @@ function App() { //page로 router지정
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/About" element={<AboutPage />} />
-        <Route path="/Tech" element={<TechPage />} />
+        <Route path="/Book" element={<TechPage />} />
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/Culture" element={<CulturePage />} />
         <Route path="/Submit" element={<SubmitPage />} />
