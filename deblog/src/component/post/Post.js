@@ -14,8 +14,6 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     width:100%;
 }
 :hover{
-
-
     width: 355px;
     display: inline-block;
   transition-duration: 1.0s;
@@ -35,7 +33,6 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     animation-direction: alternate;
   }
 
-    
 }
 `
 
