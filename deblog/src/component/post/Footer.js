@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const Styledfooter = styled.footer`
 display:flex;
+font-size:20px;
 justify-content:space-between;
 align-items:center;
-padding:0 12px;
-font-size: 20px;
+padding:12px;
 `
 
 const Footer = (props) => {
