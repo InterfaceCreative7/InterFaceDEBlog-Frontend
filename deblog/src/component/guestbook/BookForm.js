@@ -15,10 +15,10 @@ align-items:center;
 @media (max-width:500px){
     width:40vw;
     height:8vw;
-    margin-right:1vw;
+    margin:auto;
     padding:0.5vw;
-    border-radius:10px;
-    font-size:3vw;
+   
+    font-size:30%;
 }
 `
 
