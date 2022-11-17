@@ -8,17 +8,24 @@ justify-content:space-evenly;
 align-items:center;
 border-radius:30px;
 width:70vw;
-
+margin-right:1vw;
 height:15vw;
 margin-top:5vw;
+
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 list-style:none;
+box{ 
+    width:300px;
+    height:300px;
+    margin:0 auto;
+}
 
 p{
     font-family: 'Noto Sans KR', sans-serif;
 }
 p.name{ 
     font-size:1.8vw;
+
 }
 p.contents{
     font-size:1.3vw;
@@ -27,10 +34,10 @@ p.contents{
     border-style: solid;
     border-color: coral;
 }
-@media (max-width:500px){
-    width:40vw;
+@media (max-width:400px){
+    width:65vw;
     height:8vw;
-    margin-right:1vw;
+    margin-right:10vw;
     padding:0.5vw;
     border-radius:10px;
     font-size:3vw;

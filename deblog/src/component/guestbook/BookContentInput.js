@@ -4,14 +4,15 @@ import styled from "styled-components";
 const StyledBookContentInput = styled.textarea`
 width:40vw;
 height:10vw;
-margin-right:1vw;
+margin-right:0.1vw;
 padding:0.8vw;
 border-radius:10px;
 font-size:1vw;
+text-align: center;
 
 @media (max-width:500px){
     width:40vw;
-    height:40vw;
+    height:8vw;
     margin-right:1vw;
     padding:0.5vw;
     border-radius:10px;
