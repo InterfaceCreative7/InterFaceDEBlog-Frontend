@@ -34,9 +34,10 @@ p.contents{
 
 const BookContents = (props) => {
 
-    const { writername, body } = props.items
+    const { writername, body, docType } = props.items
     return (
         <StyledBookContents>
+            <p className="name">{docType}</p>
             <p className="name">{writername}</p>
             <p className="contents">{body}</p>
         </StyledBookContents>
