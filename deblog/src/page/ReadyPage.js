@@ -1,5 +1,4 @@
 import classes from "./ReadyPage.module.css"
-import { useState } from "react";
 
 const ReadyPage = () => {
 
