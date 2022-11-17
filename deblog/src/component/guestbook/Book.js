@@ -17,9 +17,10 @@ align-items:center;
 justify-contents:center;
 
 @media (max-width:500px){
-    width:40vw;
-    height:8vw;
-    margin-right:1vw;
+    width:100%;
+    height:auto;
+    margin:auto;
+    float:right;
     padding:0.5vw;
     border-radius:10px;
     font-size:3vw;
@@ -45,8 +46,8 @@ const Book = () => {
         receiveServer();
     }, [chechBook]);
     const deletData = async () => {//삭제기능 코드
+
         dispatch(BookActions.checkBook())
-        console.log(chechBook)
         await api.delete("about/comments/clear", {
 
         }).catch(err => {
