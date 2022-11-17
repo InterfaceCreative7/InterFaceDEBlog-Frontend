@@ -9,7 +9,7 @@ const BookSelect = () => {
 
     return (
         <StyledBookSelect name="type">
-            <option>피드백</option>
+            <option>feedback</option>
             <option>질문</option>
             <option>방명록</option>
         </StyledBookSelect>
