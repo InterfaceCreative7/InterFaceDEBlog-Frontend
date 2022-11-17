@@ -12,7 +12,7 @@ function MenuBar() {//component 중 메뉴바
                     <Link to="/About" className={classes.btn}>About</Link>
                 </li>
                 <li>
-                    <Link to="/Tech" className={classes.btn}>Tech</Link>
+                    <Link to="/Book" className={classes.btn}>Book</Link>
                 </li>
                 <li >
                     <Link to="/Contact" className={classes.btn}>Contact</Link>
