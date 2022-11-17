@@ -10,15 +10,19 @@ import { BookActions } from "../../store/Book-slice";
 const StyledBookForm = styled.form`
 display:flex;
 flex-direction:column;
-width:80vw;
+width:100vw;
+height:30vw;
+justify-content:center;
 align-items:center;
 
+.input{
+    display:flex;
+}
 @media (max-width:500px){
-    width:40vw;
+    width:100vw;
     height:30vw;
     margin:auto;
     padding:0.5vw;
-   
     font-size:30%;
 }
 `
@@ -58,10 +62,10 @@ const BookForm = () => {
 
     return (
         <StyledBookForm onSubmit={submitForm}>
+            <BookSelect />
             <BookNameInput />
-            <div>
-                <BookContentInput />
-                <BookSelect />
+            <BookContentInput />
+            <div className="input">
                 <BookButton />
             </div>
         </StyledBookForm>
