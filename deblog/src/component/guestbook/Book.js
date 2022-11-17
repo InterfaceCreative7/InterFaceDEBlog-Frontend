@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import BookForm from "./BookForm";
 import BookContents from "./BookContents";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import api from "../server/Auth";
 import { useEffect } from "react";
+import { BookActions } from "../../store/Book-slice";
 
 
 const StyledBook = styled.ul`
@@ -27,6 +28,7 @@ justify-contents:center;
 `
 
 const Book = () => {
+    const dispatch = useDispatch();
     const chechBook = useSelector(state => state.book.check)
     const [book, setBook] = useState([])
     useEffect(() => {
@@ -44,6 +46,8 @@ const Book = () => {
         receiveServer();
     }, [chechBook]);
     const deletData = async () => {//삭제기능 코드
+
+        dispatch(BookActions.checkBook())
         await api.delete("about/comments/clear", {
 
         }).catch(err => {
