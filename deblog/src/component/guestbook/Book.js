@@ -34,6 +34,7 @@ const Book = () => {
 
             }).then(res => {
                 const { data } = res;
+                console.log(data)
                 setBook(data)
             }).catch(err => {
                 console.log(err)
@@ -41,8 +42,17 @@ const Book = () => {
         }
         receiveServer();
     }, [chechBook]);
+    const deletData = async () => {//삭제기능 코드
+        await api.delete("about/comments/clear", {
+
+        }).catch(err => {
+            console.log(err)
+        })
+    }
+
     return (
         <StyledBook>
+            <button onClick={deletData}>삭제</button>
             <BookForm />
             {book && book.map(element => (
                 <BookContents
