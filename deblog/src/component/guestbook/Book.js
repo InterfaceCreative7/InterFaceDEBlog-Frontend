@@ -8,8 +8,8 @@ import { useEffect } from "react";
 import { BookActions } from "../../store/Book-slice";
 
 
-const StyledBook = styled.ul`
-width:60%;
+const StyledBook = styled.div`
+width:40vw;
 height:auto;
 display:flex;
 flex-direction:column;
@@ -17,7 +17,7 @@ align-items:center;
 justify-contents:center;
 
 @media (max-width:500px){
-    width:100%;
+    width:80%;
     height:auto;
     margin:auto;
     float:right;
@@ -59,11 +59,11 @@ const Book = () => {
         <StyledBook>
             <button onClick={deletData}>삭제</button>
             <BookForm />
-            {book && book.map(element => (
-                <BookContents
-                    items={element} />
-            ))
-            }
+            <ul>
+                {book && book.map(element => (
+                    <BookContents items={element} />
+                ))}
+            </ul>
         </StyledBook>
     )
 }
