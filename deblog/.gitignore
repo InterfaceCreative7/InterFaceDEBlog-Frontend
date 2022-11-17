@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+# api
+./component/server/Auth.js
+
 
 # testing
 /coverage
