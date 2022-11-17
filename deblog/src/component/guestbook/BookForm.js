@@ -19,7 +19,7 @@ align-items:center;
     display:flex;
 }
 @media (max-width:500px){
-    width:100vw;
+    width:80vw;
     height:30vw;
     margin:auto;
     padding:0.5vw;
