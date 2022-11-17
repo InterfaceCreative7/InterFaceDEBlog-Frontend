@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledBookButton = styled.button`
 width:6vw;
 height:5vw;
+margin-top:1vw;
 outline:none;
 border:none;
 background-color:transparent;
@@ -103,11 +104,11 @@ img:hover{
 
 const BookButton = () => {
 
-    return (
-        <StyledBookButton>
-            <img src="./image/homeButton.jpg" />
-        </StyledBookButton>
-    )
+  return (
+    <StyledBookButton>
+      <img src="./image/homeButton.jpg" />
+    </StyledBookButton>
+  )
 }
 
 export default BookButton;

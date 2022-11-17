@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledBookSelect = styled.select`
-
+    margin-bottom:5px;
 
 `
 
@@ -9,9 +9,9 @@ const BookSelect = () => {
 
     return (
         <StyledBookSelect name="type">
-            <option>feedback</option>
-            <option>질문</option>
-            <option>방명록</option>
+            <option>FeedBack</option>
+            <option>QnA</option>
+            <option>GuestBook</option>
         </StyledBookSelect>
     )
 }
