@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import api from "../server/Auth";
+
 
 const StyledBookContents = styled.li`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
