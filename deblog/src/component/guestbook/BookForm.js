@@ -15,7 +15,7 @@ align-items:center;
 
 @media (max-width:500px){
     width:40vw;
-    height:8vw;
+    height:30vw;
     margin:auto;
     padding:0.5vw;
    
@@ -32,7 +32,6 @@ const BookForm = () => {
         const { type } = target;
         const { id } = target;
         const { content } = target;
-        console.log(type.value, id.value, content.value)
         SubmitServer(type.value, id.value, content.value)
         receiveServer()
     }
