@@ -8,10 +8,12 @@ justify-content:space-evenly;
 align-items:center;
 border-radius:30px;
 width:70vw;
+
 height:15vw;
 margin-top:5vw;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 list-style:none;
+
 p{
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -21,7 +23,9 @@ p.name{
 p.contents{
     font-size:1.3vw;
 }
-
+p.asd{
+    border-color:red;   
+}
 @media (max-width:500px){
     width:40vw;
     height:8vw;
@@ -33,7 +37,6 @@ p.contents{
 `
 
 const BookContents = (props) => {
-
     const { writername, body, docType } = props.items
     return (
         <StyledBookContents>
