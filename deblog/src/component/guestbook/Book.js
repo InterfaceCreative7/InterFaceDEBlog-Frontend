@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import BookForm from "./BookForm";
-import BookContents from "./BookContents";
+import BookForm from "./BookForm.js";
+import BookContents from "./BookContents.js";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import api from "../server/Auth";
+import api from "../server/Auth.js";
 import { useEffect } from "react";
-import { BookActions } from "../../store/Book-slice";
 
 
 const StyledBook = styled.div`

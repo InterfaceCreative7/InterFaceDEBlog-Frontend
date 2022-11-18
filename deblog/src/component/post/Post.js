@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Content from "./Content.js"
 import Footer from "./Footer.js"
-import Title from "./Title"
+import Title from "./Title.js"
 
 
 const Styledpost = styled.div`
@@ -40,7 +40,7 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Post = (props) => {
-    const { PostImgae, PostTitle, PostContent, PostFooter } = props.items
+    const { PostTitle, PostContent, PostFooter } = props.items
     return (
         <Styledpost>
             <img className="PostImage" src={process.env.PUBLIC_URL + "/image/tibet.jpg"} alt="postImgage"></img>
