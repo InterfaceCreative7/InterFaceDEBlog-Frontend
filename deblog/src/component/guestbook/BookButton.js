@@ -104,11 +104,11 @@ img:hover{
 
 const BookButton = () => {
 
-    return (
-        <StyledBookButton>
-            <img src="./image/homeButton.jpg" />
-        </StyledBookButton>
-    )
+  return (
+    <StyledBookButton>
+      <img src={process.env.PUBLIC_URL + "/image/homeButton.jpg"} />
+    </StyledBookButton>
+  )
 }
 
 export default BookButton;

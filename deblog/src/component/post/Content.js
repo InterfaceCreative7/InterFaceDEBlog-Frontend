@@ -4,6 +4,7 @@ const Styledcontent = styled.div`
 display:flex;
 justify-content:center;
 padding:5px;
+text-decoration: none;
 `
 
 const Content = (props) => {
