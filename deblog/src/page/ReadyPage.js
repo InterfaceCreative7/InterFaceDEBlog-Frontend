@@ -4,7 +4,6 @@ const ReadyPage = () => {
 
     return (
         <div className={classes.main}>
-            <img src="" />
             <input type="file" accept='image/*'></input>
         </div>
     )
