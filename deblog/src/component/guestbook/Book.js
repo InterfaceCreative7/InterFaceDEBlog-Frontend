@@ -9,7 +9,7 @@ import { BookActions } from "../../store/Book-slice";
 
 
 const StyledBook = styled.div`
-width:40vw;
+width:80%;
 height:auto;
 display:flex;
 flex-direction:column;
@@ -17,8 +17,7 @@ align-items:center;
 justify-contents:center;
 
 @media (max-width:500px){
-    width:80%;
-    height:auto;
+    width:80vw;
     margin:auto;
     float:right;
     padding:0.5vw;
@@ -38,7 +37,7 @@ const Book = () => {
             }).then(res => {
                 const { data } = res;
                 console.log(data)
-                setBook(data)
+                setBook(data.reverse())
             }).catch(err => {
                 console.log(err)
             })
