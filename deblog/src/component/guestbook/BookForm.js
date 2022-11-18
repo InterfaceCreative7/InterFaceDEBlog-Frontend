@@ -19,10 +19,11 @@ align-items:center;
     display:flex;
 }
 @media (max-width:500px){
-    width:80vw;
-    height:30vw;
-    margin:auto;
-    padding:0.5vw;
+    justify-content:start;
+    width:100vw;
+    height:200px;
+    margin:0;
+    padding:0;
     font-size:30%;
 }
 `
@@ -36,8 +37,18 @@ const BookForm = () => {
         const { type } = target;
         const { id } = target;
         const { content } = target;
+        if (id.value === "") {
+            alert("아이디를 입력해주세요!")
+            return;
+        }
+        if (content.value === "") {
+            alert("내용을 입력해주세요!")
+            return;
+        }
         SubmitServer(type.value, id.value, content.value)
         receiveServer()
+        id.value = "";
+        content.value = "";
     }
 
     const SubmitServer = async (type, id, content) => {//서버에 데이터를 제출하는코드
@@ -54,6 +65,8 @@ const BookForm = () => {
         await api.get("about/comments/findall/?title=dataType&value=comment", {
 
         }).then(res => {
+            const { data } = res;
+            console.log(data)
             dispatch(BookActions.checkBook())
         }).catch(err => {
             console.log(err)
