@@ -29,7 +29,7 @@ margin-bottom:55px;
 const Panel = () => {
     return (
         <StyledPanel>
-            <img className="logo" src="./image/panel.jpg" alt="techblog" />
+            <img className="logo" src={process.env.PUBLIC_URL + "/image/panel.jpg"} alt="techblog" />
         </StyledPanel>
     )
 }

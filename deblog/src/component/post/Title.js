@@ -6,7 +6,6 @@ justify-content:center;
 font-weight:bold;
 font-size:20px;
 padding:5px;
-
 {
     color: #333;
     text-decoration: none;
