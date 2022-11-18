@@ -11,6 +11,8 @@
 
 
 .image {
+    background-color: #2421A9;
+    border-radius: 100%;
     width: 220px;
     height: 220px;
 }
