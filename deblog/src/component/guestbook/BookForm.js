@@ -5,7 +5,7 @@ import BookButton from "./BookButton.js";
 import api from "../server/Auth.js";
 import BookSelect from "./BookSelect.js";
 import { useDispatch } from "react-redux";
-import { BookActions } from "../../store/Book-slice";
+import { BookActions } from "../../store/Book-slice.js";
 
 const StyledBookForm = styled.form`
 display:flex;
