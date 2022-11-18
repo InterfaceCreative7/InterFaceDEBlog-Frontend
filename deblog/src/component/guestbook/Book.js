@@ -44,15 +44,6 @@ const Book = () => {
         }
         receiveServer();
     }, [chechBook]);
-    const deletData = async () => {//삭제기능 코드
-        dispatch(BookActions.checkBook())
-        console.log(chechBook)
-        await api.delete("about/comments/clear", {
-
-        }).catch(err => {
-            console.log(err)
-        })
-    }
 
     return (
         <StyledBook>
