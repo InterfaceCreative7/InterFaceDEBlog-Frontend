@@ -43,7 +43,7 @@ const Post = (props) => {
     const { PostImgae, PostTitle, PostContent, PostFooter } = props.items
     return (
         <Styledpost>
-            <img className="PostImage" src={PostImgae} alt="postImgage"></img>
+            <img className="PostImage" src={process.env.PUBLIC_URL + "/image/tibet.jpg"} alt="postImgage"></img>
             <Title value={PostTitle}></Title>
             <Content value={PostContent}></Content>
             <Footer value={PostFooter}></Footer>

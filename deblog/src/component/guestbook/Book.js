@@ -56,7 +56,6 @@ const Book = () => {
 
     return (
         <StyledBook>
-            <button onClick={deletData}>삭제</button>
             <BookForm />
             <ul>
                 {book && book.map(element => (

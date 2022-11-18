@@ -1,12 +1,12 @@
 [
     {
-        "image": "./image/tibet.jpg",
+        "image": "/image/tibet.jpg",
         "title": "안녕하세요 제목이에요.",
         "contents": "안녕하세요 게시물이에요.",
         "footer": "박규태"
     },
     {
-        "image": "./image/tibet.jpg",
+        "image": "/image/tibet.jpg",
         "title": "안녕하세요 제목이에요.",
         "contents": "안녕하세요 게시물이에요.",
         "footer": "박규태"
