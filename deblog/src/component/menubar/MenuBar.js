@@ -12,10 +12,10 @@ function MenuBar() {//component 중 메뉴바
                     <Link to="/About" className={classes.btn}>About</Link>
                 </li>
                 <li >
-                    <Link to="/Submit" className={classes.btn}>Contact</Link>
+                    <Link to="/Submit" className={classes.btn}>Submit</Link>
                 </li>
                 <li>
-                    <Link to="/Tech" className={classes.btn}>Tech</Link>
+                    <Link to="/Contact" className={classes.btn}>Contact</Link>
                 </li>
                 <li>
                     <Link to="/Book" className={classes.btn}>Book</Link>
