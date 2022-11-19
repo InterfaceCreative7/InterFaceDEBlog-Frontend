@@ -6,8 +6,8 @@ const StyldeMap = styled.div`
     width: 300px;
     height: 300px;
     @media (max-width:500px){
-        width:20px;
-        height:20px;
+        width:100px;
+        height:100px;
     }
 `
 

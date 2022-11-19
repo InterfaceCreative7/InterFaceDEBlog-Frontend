@@ -58,6 +58,11 @@ textarea {
 
 
 @media (max-width:500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
     .title {
         width: 80%;
         font-size: 1rem;
