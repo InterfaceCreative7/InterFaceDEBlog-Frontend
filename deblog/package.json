@@ -48,7 +48,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://34.132.35.80:3000/",
+  "proxy": "http://34.132.35.80:3000",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
