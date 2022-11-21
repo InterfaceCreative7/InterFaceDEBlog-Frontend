@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm'
 import SubmitMenu from "../component/submitMenu/SubmitMenu"
 import MenuBar from "../component/menubar/MenuBar"
 
+
 const SubmitPage = () => {
     const [title, setTitle] = useState("")
     const [content, setcontent] = useState("")

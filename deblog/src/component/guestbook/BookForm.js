@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import BookContentInput from "./BookContentInput";
-import BookNameInput from "./BookNameInput";
-import BookButton from "./BookButton";
-import api from "../server/Auth";
-import BookSelect from "./BookSelect";
+import BookContentInput from "./BookContentInput.js";
+import BookNameInput from "./BookNameInput.js";
+import BookButton from "./BookButton.js";
+import api from "../server/Auth.js";
+import BookSelect from "./BookSelect.js";
 import { useDispatch } from "react-redux";
-import { BookActions } from "../../store/Book-slice";
+import { BookActions } from "../../store/Book-slice.js";
 
 const StyledBookForm = styled.form`
 display:flex;
