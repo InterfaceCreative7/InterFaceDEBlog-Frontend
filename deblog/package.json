@@ -30,6 +30,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
+  "homepage": "https://interfacecreative7.github.io/InterFaceDEBlog-Frontend/",
   "eslintConfig": {
     "extends": [
       "react-app",

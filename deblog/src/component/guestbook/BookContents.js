@@ -77,7 +77,7 @@ p.GuestBook{
     font-size:1.8vw;
     padding:5px;
     margin-right:1.5vw;
-    border:1px solid #ffff00;
+    border:1px solid #ffd700;
     border-radius:30px;
 }
 @media (max-width:400px){

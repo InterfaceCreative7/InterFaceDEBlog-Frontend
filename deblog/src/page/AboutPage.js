@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <div className={classes.main}>
             <MenuBar />
-            <img className={classes.image} alt="인터페이스 로고" src="./image/homeButton.jpg" />
+            <img className={classes.image} alt="인터페이스 로고" src={process.env.PUBLIC_URL + "/image/homeButton.jpg"} />
             <div className={classes.text}>
                 <p align="center">
                     "다양한 학술활동을 통해 사람과 컴퓨터를 잇는다"<br /> <br /><br />
