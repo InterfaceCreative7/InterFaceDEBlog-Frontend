@@ -40,7 +40,7 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Post = (props) => {
-    const { PostTitle, PostContent, PostFooter } = props.items
+    const { PostTitle, PostContent, PostFooter, imageUrl } = props.items
     return (
         <Styledpost>
             <img className="PostImage" src={process.env.PUBLIC_URL + "/image/tibet.jpg"} alt="postImgage"></img>
