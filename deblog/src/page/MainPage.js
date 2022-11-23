@@ -17,12 +17,15 @@ const MainPage = () => {
     const [indexOfLastPost, setIndexOfLastPost] = useState(0);
     const [indexOfFirstPost, setIndexOfFirstPost] = useState(0);
     useEffect(async () => {
-        await api.get("posts/findall/?title=dataType&value=User")
+        const dataWrite = async () =>{
+         api.get("posts/findall/?title=dataType&value=User")
             .then(res => {
                 const { data } = res;
                 setPost(data)
                 setCount(data.length)
             })
+        }
+        dataWrite();
     }, [])
     useEffect(() => {
         setCurrentPosts(post.slice(indexOfFirstPost, indexOfLastPost))
