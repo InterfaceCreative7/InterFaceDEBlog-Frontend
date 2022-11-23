@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SubmitButton from "./SubmitButton";
+import SubmitButton from "./SubmitButton.js";
 
 const StyledSubmitMenu = styled.div`
 position:fixed;

@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import ReactPagiNation from "react-js-pagination";
-import { useState } from "react";
 
 const StyledPagiNation = styled.div`
- .pagination {
+.pagination {
     display: flex;
     justify-content: center;
 }
-  ul {
+ul{
     list-style: none;
     padding: 0;
 }
@@ -16,19 +15,18 @@ li{
 }
 `
 
-const PagiNation = () => {
-    const [page, setPage] = useState(1);
-    const changePage = () => {
-        setPage(page)
-    }
+const PagiNation = (props) => {
+
     return (
         <StyledPagiNation>
             <ReactPagiNation
-                activePage={page}
-                itemsCountPerPage={6}
-                totalItemsCount={450}
-                pageRangeDisplayed={6}
-                onChange={changePage}
+                activePage={props.page}//현재 페이지
+                itemsCountPerPage={props.postPerPage}//한 페이지 당 보여줄 리스트 아이템 개수
+                totalItemsCount={props.count}//총 아이템의 개수
+                pageRangeDisplayed={7}//Paginator 내에서 보여줄 페이지의 범위
+                prevPageText={"<"}
+                nextPageText={">"}
+                onChange={(page) => props.onChange(page)}
             />
         </StyledPagiNation>
     )

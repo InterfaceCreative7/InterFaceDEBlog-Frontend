@@ -8,20 +8,11 @@
 
 
 .post {
-    width: auto;
+    width: 80%;
     display: flex;
     text-align: center;
 
     justify-content: center;
     align-items: center;
-    align-items: auto;
     flex-flow: wrap;
-    padding-left: 7%;
-    padding-right: 7%;
-    margin-left:7%;
-    margin-right:2%;
-    
-    
 }
-
-

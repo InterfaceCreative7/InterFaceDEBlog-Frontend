@@ -6,7 +6,6 @@ justify-content:center;
 font-weight:bold;
 font-size:20px;
 padding:5px;
-
 {
     color: #333;
     text-decoration: none;
@@ -23,7 +22,7 @@ padding:5px;
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #ffb000;
+    background: #6500E7;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -35,12 +34,9 @@ padding:5px;
 `
 
 const Title = (props) => {
-    const ABC = () =>{
-        console.log("asdsad")
-    }
-    return (
-        <Styledtitle>{props.value}</Styledtitle>
-    )
+  return (
+    <Styledtitle>{props.value}</Styledtitle>
+  )
 
 }
 

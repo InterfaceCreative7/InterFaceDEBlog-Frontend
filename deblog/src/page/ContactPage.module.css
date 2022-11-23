@@ -1,4 +1,4 @@
-.chat_r1{
+.chat_r1 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -9,31 +9,32 @@
     margin-right: 40%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-.chat_l1{
+.chat_l1 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     padding: 3%;
     width: 40%;
+    height: 100%;
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 70%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 50px 50px 50px 50px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-.chat_r2{
+.chat_r2 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -45,13 +46,13 @@
     margin-right: 40%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-.chat_l2{
+.chat_l2 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -63,13 +64,13 @@
     margin-right: 70%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-.chat_r3{
+.chat_r3 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -81,13 +82,13 @@
     margin-right: 40%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-.chat_l3{
+.chat_l3 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
     display: flex;
@@ -99,12 +100,10 @@
     margin-right: 70%;
     text-align: left;
     outline: none;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
 
-@media(width-max: 500px){
-   
-}
+@media(width-max: 500px) {}

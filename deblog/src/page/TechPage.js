@@ -1,11 +1,14 @@
-import MenuBar from "../component/menuBar/MenuBar.js"
 
+import MenuBar from "../component/menubar/MenuBar.js"
+import Book from "../component/guestbook/Book.js"
+import classes from "./TechPage.module.css"
 
 
 const TechPage = () => {
     return (
-        <div>
+        <div className={classes.main}>
             <MenuBar />
+            <Book />
         </div>
     )
 }
