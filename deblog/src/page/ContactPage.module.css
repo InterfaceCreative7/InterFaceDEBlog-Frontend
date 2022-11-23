@@ -1,7 +1,10 @@
 .chat_r1{
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);
-    display: flex;
+    display: inline-block;
+    position: relative;
+    transition-duration: defaultDuration;
+    transition-property: transform;
     align-items: center;
     padding: 3%;
     width: 30%;
@@ -13,6 +16,8 @@
     border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
+
+
 }
 
 .chat_l1{
