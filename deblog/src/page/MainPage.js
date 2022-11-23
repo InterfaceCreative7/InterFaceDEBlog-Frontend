@@ -16,19 +16,26 @@ const MainPage = () => {
     const [currentPosts, setCurrentPosts] = useState([]);//보여줄 페이지
     const [indexOfLastPost, setIndexOfLastPost] = useState(0);
     const [indexOfFirstPost, setIndexOfFirstPost] = useState(0);
-    useEffect(async () => {
-        await api.get("posts/findall/?title=dataType&value=User")
-            .then(res => {
-                const { data } = res;
-                setPost(data)
-                setCount(data.length)
-            })
-    }, [])
+
+
     useEffect(() => {
-        setCurrentPosts(post.slice(indexOfFirstPost, indexOfLastPost))
+        const submitData = async () => {
+            await api.get("posts/findall/?title=dataType&value=User")
+                .then(res => {
+                    const { data } = res;
+                    setPost(data)
+                    setCount(data.length)
+                })
+        }
+        submitData();
+    }, [])
+
+    useEffect(() => {
         setIndexOfLastPost(page * postPerPage);
-        setIndexOfFirstPost(indexOfLastPost - postPerPage)
-    }, [page, indexOfFirstPost, indexOfLastPost])
+        setIndexOfFirstPost(indexOfLastPost - postPerPage);
+        setCurrentPosts(post.slice(indexOfFirstPost, indexOfLastPost));
+    }, [page, indexOfFirstPost, indexOfLastPost, post])
+
 
     const handlePageChange = (pages) => {
         setPage(pages);
