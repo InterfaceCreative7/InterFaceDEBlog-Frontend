@@ -17,6 +17,7 @@ const MainPage = () => {
     const [indexOfLastPost, setIndexOfLastPost] = useState(0);
     const [indexOfFirstPost, setIndexOfFirstPost] = useState(0);
 
+
     useEffect(() => {
         const submitData = async () => {
             await api.get("posts/findall/?title=dataType&value=User")
@@ -34,6 +35,7 @@ const MainPage = () => {
         setIndexOfFirstPost(indexOfLastPost - postPerPage);
         setCurrentPosts(post.slice(indexOfFirstPost, indexOfLastPost));
     }, [page, indexOfFirstPost, indexOfLastPost, post])
+
 
     const handlePageChange = (pages) => {
         setPage(pages);
