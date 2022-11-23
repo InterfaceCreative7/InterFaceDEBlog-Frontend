@@ -2,11 +2,11 @@ import styled from "styled-components";
 import ReactPagiNation from "react-js-pagination";
 
 const StyledPagiNation = styled.div`
- .pagination {
+.pagination {
     display: flex;
     justify-content: center;
 }
-  ul {
+ul{
     list-style: none;
     padding: 0;
 }
