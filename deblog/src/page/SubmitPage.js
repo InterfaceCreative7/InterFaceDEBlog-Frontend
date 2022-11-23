@@ -2,8 +2,8 @@ import ReactMarkdown from "react-markdown"
 import classes from "./SubmitPage.module.css"
 import { useState } from "react"
 import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 import SubmitMenu from "../component/submitMenu/SubmitMenu"
-import MenuBar from "../component/menubar/MenuBar"
 
 
 const SubmitPage = () => {
@@ -26,7 +26,7 @@ const SubmitPage = () => {
             </div>
             <div className={`${classes.show} ${classes.bisector}`}>
                 <h1 className={`${classes.title} ${classes.same}`}>{title}</h1>
-                <ReactMarkdown remarkPlugins={[remarkGfm]} className={`${classes.contents} ${classes.same}`}>{content}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={`${classes.contents} ${classes.same}`}>{content}</ReactMarkdown>
             </div>
         </div>
     )
