@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import BookForm from "./BookForm";
-import BookContents from "./BookContents";
-import { useSelector, useDispatch } from "react-redux";
+import BookForm from "./BookForm.js";
+import BookContents from "./BookContents.js";
+import { useSelector } from "react-redux";
 import { useState } from "react";
-import api from "../server/Auth";
+import api from "../server/Auth.js";
 import { useEffect } from "react";
-import { BookActions } from "../../store/Book-slice";
 
 
 const StyledBook = styled.div`
-width:40vw;
+width:80%;
 height:auto;
 display:flex;
 flex-direction:column;
@@ -17,8 +16,7 @@ align-items:center;
 justify-contents:center;
 
 @media (max-width:500px){
-    width:80%;
-    height:auto;
+    width:80vw;
     margin:auto;
     float:right;
     padding:0.5vw;
@@ -28,7 +26,6 @@ justify-contents:center;
 `
 
 const Book = () => {
-    const dispatch = useDispatch();
     const chechBook = useSelector(state => state.book.check)
     const [book, setBook] = useState([])
     useEffect(() => {
@@ -38,26 +35,16 @@ const Book = () => {
             }).then(res => {
                 const { data } = res;
                 console.log(data)
-                setBook(data)
+                setBook(data.reverse())
             }).catch(err => {
                 console.log(err)
             })
         }
         receiveServer();
     }, [chechBook]);
-    const deletData = async () => {//삭제기능 코드
-        dispatch(BookActions.checkBook())
-        console.log(chechBook)
-        await api.delete("about/comments/clear", {
-
-        }).catch(err => {
-            console.log(err)
-        })
-    }
 
     return (
         <StyledBook>
-            <button onClick={deletData}>삭제</button>
             <BookForm />
             <ul>
                 {book && book.map(element => (

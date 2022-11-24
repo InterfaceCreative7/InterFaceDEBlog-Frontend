@@ -11,8 +11,8 @@ font-size:1.2vw;
 
 
 @media (max-width:500px){
-    width:40vw;
-    height:8vw;
+    width:30vw;
+    height:5vw;
     margin-right:1vw;
     text-align: center;
     padding:0.5vw;
@@ -25,7 +25,7 @@ font-size:1.2vw;
 const BookNameInput = () => {
 
     return (
-        <StyledBookNameInput name="id" placeholder="이름을 써주세요!" />
+        <StyledBookNameInput maxLength={10} name="id" placeholder="이름을 써주세요!" />
     )
 }
 

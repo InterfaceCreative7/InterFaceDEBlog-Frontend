@@ -11,8 +11,7 @@ font-size:1vw;
 text-align: center;
 
 @media (max-width:500px){
-    width:40vw;
-    height:8vw;
+
     margin-right:1vw;
     padding:0.5vw;
     border-radius:10px;
@@ -25,7 +24,7 @@ text-align: center;
 const BookContentInput = () => {
 
     return (
-        <StyledBookContentInput name="content" placeholder="하고싶은 말을 써주세요!" />
+        <StyledBookContentInput maxLength={100} name="content" placeholder="하고싶은 말을 써주세요!" />
     )
 }
 

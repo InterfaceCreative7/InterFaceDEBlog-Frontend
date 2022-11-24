@@ -6,10 +6,6 @@
 .pnp.js
 
 
-# api
-server
-
-
 
 # testing
 /coverage

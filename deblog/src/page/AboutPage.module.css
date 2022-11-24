@@ -4,14 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #9F9F9F;
+    background-color: #fffaf0;
     height: 100vh;
     font-size: 20px;
-
 }
 
 
 .image {
+    background-color: #2421A9;
+    border-radius: 100%;
     width: 220px;
     height: 220px;
 }
@@ -21,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Nanum Gothic', sans-serif;
+    padding: 5vw;
 }
 
 

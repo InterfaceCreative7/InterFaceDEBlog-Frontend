@@ -103,12 +103,7 @@ img:hover{
 `
 
 const BookButton = () => {
-
-    return (
-        <StyledBookButton>
-            <img src="./image/homeButton.jpg" />
-        </StyledBookButton>
-    )
 }
+
 
 export default BookButton;
