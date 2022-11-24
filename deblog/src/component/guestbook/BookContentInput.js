@@ -11,7 +11,8 @@ font-size:1vw;
 text-align: center;
 
 @media (max-width:500px){
-
+    width:60vw;
+    height:30vw;
     margin-right:1vw;
     padding:0.5vw;
     border-radius:10px;

@@ -8,7 +8,7 @@ text-align: center;
 padding:0.5vw;
 border-radius:10px;
 font-size:1.2vw;
-
+margin-bottom:1vw;
 
 @media (max-width:500px){
     width:30vw;

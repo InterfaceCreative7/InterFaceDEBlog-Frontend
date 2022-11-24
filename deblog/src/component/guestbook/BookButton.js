@@ -103,7 +103,13 @@ img:hover{
 `
 
 const BookButton = () => {
-}
 
+  return (
+    <StyledBookButton>
+      <img src={process.env.PUBLIC_URL + "/image/homeButton.jpg"} alt="submit_button" />
+
+    </StyledBookButton>
+  )
+}
 
 export default BookButton;
