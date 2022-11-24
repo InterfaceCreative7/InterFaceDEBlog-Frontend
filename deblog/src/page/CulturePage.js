@@ -1,5 +1,4 @@
-
-import MenuBar from "../component/menuBar/MenuBar.js"
+import MenuBar from "../component/menubar/MenuBar.js"
 
 
 const CulturePage = () => {
