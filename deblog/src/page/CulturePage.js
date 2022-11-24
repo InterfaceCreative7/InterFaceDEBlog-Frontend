@@ -10,4 +10,4 @@ const CulturePage = () => {
     )
 }
 
-export default CulturePage;
+export default CulturePage
