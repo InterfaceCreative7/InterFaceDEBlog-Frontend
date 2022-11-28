@@ -1,18 +1,120 @@
 import styled from "styled-components";
 import ReactPagiNation from "react-js-pagination";
+//http://ianlunn.github.io/Hover/
+const StyledPagiNation = styled.div
+`
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
 
-const StyledPagiNation = styled.div`
 .pagination {
     display: flex;
     justify-content: center;
-}
-ul{
+    margin-top: 15px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 25%);
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
-}
-li{
-    margin:10px;
-}
+  }
+  
+  ul.pagination li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px;
+    border-width : 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: Gulim, "Times New Roman", Georgia, serif;
+    font-weight: bold;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.pagination li.active:hover{
+    background-color: skyblue;
+    
+  }
+
+  ul.pagination li:first-child{
+    border-radius: 50px;
+  }
+
+  ul.pagination li:last-child{
+    border-radius: 50px;
+  }
+  
+  ul.pagination li a {
+    text-decoration: none;
+    color: #2421A9;
+    font-size: 1rem;
+  }
+  
+  ul.pagination li.active a {
+    color: white;
+  }
+  ul.pagination li:hover a {
+    color: white;
+  }
+
+  ul.pagination li:hover {
+    background-color: #2421A9;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+
+  ul.pagination li.active {
+    background-color: #2421A9;
+  }
+  
+  ul.pagination li a:hover,
+  ul.pagination li a.active {
+    color: white;
+  }
+  
+  .page-selection {
+    width: 48px;
+    height: 30px;
+    color: #2421A9;
+  }
 `
 
 const PagiNation = (props) => {
