@@ -13,7 +13,6 @@ const SubmitPage = () => {
         setTitle(event.target.value)
     }
     const contentChange = (event) => {
-        console.log(event.target.value)
         setcontent(event.target.value)
     }
     return (
@@ -22,7 +21,7 @@ const SubmitPage = () => {
             <div className={`${classes.write} ${classes.bisector}`}>
                 <textarea className={`${classes.title} ${classes.border} ${classes.same}`} onChange={titleChange} placeholder="제목을 입력해 주세요." />
                 <textarea className={`${classes.contents} ${classes.same}`} onChange={contentChange} placeholder="내용을 입력해 주세요." />
-
+                <SubmitMenu body={content} title={title} />
             </div>
             <div className={`${classes.show} ${classes.bisector}`}>
                 <h1 className={`${classes.title} ${classes.same}`}>{title}</h1>
