@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Content from "./Content.js"
 import Footer from "./Footer.js"
 import Title from "./Title.js"
+import { Link } from "react-router-dom";
 
 
 const Styledpost = styled.div`
@@ -40,14 +41,16 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Post = (props) => {
-    const { PostTitle, PostContent, PostFooter, imageUrl } = props.items
+    const { PostTitle, PostContent, PostFooter, imageUrl, _id } = props.items
     return (
-        <Styledpost>
-            <img className="PostImage" src={process.env.PUBLIC_URL + "/image/tibet.jpg"} alt="postImgage"></img>
-            <Title value={PostTitle}></Title>
-            <Content value={PostContent}></Content>
-            <Footer value={PostFooter}></Footer>
-        </Styledpost>
+        <Link to={`/${_id}`}>
+            <Styledpost>
+                <img className="PostImage" src={process.env.PUBLIC_URL + "/image/tibet.jpg"} alt="postImgage"></img>
+                <Title value={PostTitle}></Title>
+                <Content value={PostContent}></Content>
+                <Footer value={PostFooter}></Footer>
+            </Styledpost>
+        </Link>
     )
 }
 

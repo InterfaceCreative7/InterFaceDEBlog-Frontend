@@ -5,6 +5,7 @@ import ContactPage from "./page/ContactPage.js";
 import MainPage from "./page/MainPage.js";
 import SubmitPage from "./page/SubmitPage.js";
 import ReadyPage from "./page/ReadyPage.js";
+import BodyPage from "./page/BodyPage.js";
 
 function App() { //page로 router지정
   return (
@@ -16,6 +17,7 @@ function App() { //page로 router지정
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/Submit" element={<SubmitPage />} />
         <Route path="/Ready" element={<ReadyPage />} />
+        <Route path="/:_id" element={<BodyPage />} />
       </Routes>
     </BrowserRouter>
   );
