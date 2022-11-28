@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const StyledBookContents = styled.li`
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 display:flex;
 flex-direction:column;
 justify-content: space-between;
@@ -14,6 +14,7 @@ width:40vw;
 height:20vw;
 margin-right:1vw;
 margin-top:5vw;
+
 
 
 background-color: #fffaf0;
@@ -41,7 +42,7 @@ box{
 }
 
 p{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Pen Script', cursive;
 }
 p.name{ 
     font-size:1.8vw;

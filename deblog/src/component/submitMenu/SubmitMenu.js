@@ -13,10 +13,10 @@ background-color:#F5F5DC;
 padding:20px;
 `
 
-const SubmitMenu = () => {
+const SubmitMenu = (props) => {
     return (
         <StyledSubmitMenu>
-            <SubmitButton text="제출" />
+            <SubmitButton body={props.body} title={props.title} text="제출" />
         </StyledSubmitMenu>
     )
 
