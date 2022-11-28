@@ -6,8 +6,6 @@ import PagiNation from "../component/pagination/PagiNation.js"
 import Post from "../component/post/Post.js"
 import { useState, useEffect } from "react"
 
-
-
 const MainPage = () => {
     const [post, setPost] = useState([]);//서버에서 받아오는 데이터
     const [count, setCount] = useState(0);//아이템 총 개수
@@ -48,12 +46,13 @@ const MainPage = () => {
             <div className={classes.post}>
                 {currentPosts.map(element => (
                     <Post
-                        key={element.title}
+                        key={element._id}
                         items={{
                             PostImgae: element.imageUrl,
                             PostTitle: element.title,
                             PostContent: element.blogBody,
-                            PostFooter: element.writername
+                            PostFooter: element.writername,
+                            _id: element._id
                         }}
                     />
                 ))}

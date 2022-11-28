@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { PostActions } from "../../store/post-slice";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const StyledSubmitButton = styled.button`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
@@ -12,26 +16,25 @@ background-color:#EFA4A4;
 font-size:20px;
 font-family: 'Noto Serif KR', serif;
 background-color:transparent;
-:before{
-    content: "";
+
+::before{
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #000;
+  background-color: #0000;
   -webkit-transform: scaleY(.3);
   transform: scaleY(.3);
-  opacity: 0;
-  transition: all .3s
-  }
+  transition: all .3s;
+}
 :hover{
     color:#000000;  
 }
 :hover::before{
-    opacity: 1;
+opacity: 1;
   background-color: #F8E5A2;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
@@ -42,11 +45,29 @@ background-color:transparent;
 `
 
 const SubmitButton = (props) => {
-    const text = props.text
+    const ref = useRef();
+    const text = props.text;
+    const body = props.body;
+    const title = props.title;
+    useEffect(() => {
+        if (body === "" || title === "") {
+            ref.current.disabled = true;
+        }
+        else {
+            ref.current.disabled = false;
+        }
+    }, [body, title])
+    const dispatch = useDispatch();
+
+    const Submitbody = () => {
+        dispatch(PostActions.submitPost({ body, title }))
+    }
     return (
-        <StyledSubmitButton>
-            <Link to="/Ready" className="ready">{text}</Link>
-        </StyledSubmitButton>
+        <Link to="/Ready" className="ready">
+            <StyledSubmitButton ref={ref} onClick={Submitbody}>
+                {text}
+            </StyledSubmitButton>
+        </Link>
     )
 }
 
