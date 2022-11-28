@@ -10,6 +10,7 @@
     width: 250px;
     height: 40px;
     margin: 20%;
+    border: none;
 }
 
 .form {
@@ -31,4 +32,13 @@
     width: 200px;
     height: 50px;
     margin: 20%;
+    background-color: #FF9D6E;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: #FF7F50;
 }
