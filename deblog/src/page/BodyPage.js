@@ -2,6 +2,9 @@ import classes from "./BodyPage.module.css"
 import MenuBar from "../component/menubar/MenuBar"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 import api from "../component/server/Auth.js"
 
 const BodyPage = () => {
@@ -14,7 +17,8 @@ const BodyPage = () => {
             api.get(`posts/findall/?title=_id&value=${id}`)
                 .then(res => {
                     const { data } = res;
-                    setBody(data)
+                    console.log(data[0])
+                    setBody(data[0])
                 })
         }
         submitData()
@@ -22,6 +26,10 @@ const BodyPage = () => {
     return (
         <div>
             <MenuBar />
+            <p>{body.title}</p>
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={`${classes.contents} ${classes.same}`}>
+                {body.blogBody}
+            </ReactMarkdown>
         </div>
     )
 }
