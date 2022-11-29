@@ -12,24 +12,33 @@ const BodyPage = () => {
     const [body, setBody] = useState("")
     useEffect(() => {
         const id = params._id;
-        console.log(id)
-        const submitData = () => {
-            api.get(`posts/findall/?title=_id&value=${id}`)
+        const submitData = async () => {
+            await api.get(`posts/findall/?title=_id&value=${id}`)
                 .then(res => {
                     const { data } = res;
-                    console.log(data[0])
-                    setBody(data[0])
+                    setBody(data[0]);
+
                 })
         }
         submitData()
     }, [])
     return (
-        <div>
+
+        <div className={classes.main}>
             <MenuBar />
-            <p>{body.title}</p>
-            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={`${classes.contents} ${classes.same}`}>
-                {body.blogBody}
-            </ReactMarkdown>
+            <div className={classes.BodyPage}>
+                <h1 className={classes.head}>{body.title}</h1>
+                <div className={classes.body}>
+                    <div className={classes.middle}>
+                        <p>{body.writername}</p>
+                        <p>{body.writedate?.slice(0, 10)}</p>
+                    </div>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={`${classes.contents} ${classes.same}`}>
+                        {body.blogBody}
+                    </ReactMarkdown>
+                </div>
+            </div>
+
         </div>
     )
 }
