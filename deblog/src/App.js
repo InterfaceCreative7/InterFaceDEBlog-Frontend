@@ -6,6 +6,7 @@ import MainPage from "./page/MainPage.js";
 import SubmitPage from "./page/SubmitPage.js";
 import ReadyPage from "./page/ReadyPage.js";
 import BodyPage from "./page/BodyPage.js";
+import BookPage from "./page/BookPage.js";
 
 function App() { //page로 router지정
   return (
@@ -13,7 +14,8 @@ function App() { //page로 router지정
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/About" element={<AboutPage />} />
-        <Route path="/Book" element={<TechPage />} />
+        <Route path="/Book" element={<BookPage />} />
+        <Route path="/Tech" element={<TechPage />} />
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/Submit" element={<SubmitPage />} />
         <Route path="/Ready" element={<ReadyPage />} />
