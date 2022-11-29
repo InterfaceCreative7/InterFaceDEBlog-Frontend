@@ -17,11 +17,13 @@ const BodyPage = () => {
                 .then(res => {
                     const { data } = res;
                     setBody(data[0]);
+
                 })
         }
         submitData()
     }, [])
     return (
+
         <div className={classes.main}>
             <MenuBar />
             <div className={classes.BodyPage}>
@@ -36,6 +38,7 @@ const BodyPage = () => {
                     </ReactMarkdown>
                 </div>
             </div>
+
         </div>
     )
 }

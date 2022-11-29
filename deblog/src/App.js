@@ -8,6 +8,7 @@ import ReadyPage from "./page/ReadyPage.js";
 import BodyPage from "./page/BodyPage.js";
 import BookPage from "./page/BookPage.js";
 
+
 function App() { //page로 router지정
   return (
     <BrowserRouter>
