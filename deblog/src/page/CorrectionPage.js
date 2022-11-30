@@ -20,7 +20,6 @@ const CorrectionPage = () => {
 
     return (
         <div className={classes.main}>
-
             <div className={classes.post}>
                 {post.map(element => (
                     <Post

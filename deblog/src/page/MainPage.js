@@ -21,7 +21,7 @@ const MainPage = () => {
             await api.get("posts/findall/?title=dataType&value=User")
                 .then(res => {
                     const { data } = res;
-                    setPost(data)
+                    setPost(data.reverse())
                     setCount(data.length)
                 })
         }

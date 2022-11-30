@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
 .main {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,10 +11,14 @@
 }
 
 .BodyPage {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+img {
+    width: 350px;
 }
 
 .middle {
