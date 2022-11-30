@@ -25,12 +25,12 @@ const StyledPagiNation = styled.div
     border-radius: 50px;
     box-shadow: 2px 2px 2px rgb(0 0 0 / 25%);
   }
-  
+
   ul {
     list-style: none;
     padding: 0;
   }
-  
+
   ul.pagination li {
     display: inline-block;
     width: 25px;
@@ -46,6 +46,9 @@ const StyledPagiNation = styled.div
     align-items: center;
     font-size: 1rem;
     font-family: Gulim, "Times New Roman", Georgia, serif;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Jua', sans-serif;
+
     font-weight: bold;
 
     -webkit-transform: perspective(1px) translateZ(0);
@@ -70,7 +73,7 @@ const StyledPagiNation = styled.div
 
   ul.pagination li.active:hover{
     background-color: skyblue;
-    
+
   }
 
   ul.pagination li:first-child{
@@ -80,13 +83,13 @@ const StyledPagiNation = styled.div
   ul.pagination li:last-child{
     border-radius: 50px;
   }
-  
+
   ul.pagination li a {
     text-decoration: none;
     color: #2421A9;
     font-size: 1rem;
   }
-  
+
   ul.pagination li.active a {
     color: white;
   }
@@ -104,12 +107,12 @@ const StyledPagiNation = styled.div
   ul.pagination li.active {
     background-color: #2421A9;
   }
-  
+
   ul.pagination li a:hover,
   ul.pagination li a.active {
     color: white;
   }
-  
+
   .page-selection {
     width: 48px;
     height: 30px;
