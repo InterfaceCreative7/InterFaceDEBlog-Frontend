@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
+/*https://joshua-dev-story.blogspot.com/2020/11/javascript-css-scroll-animation.html*/
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fffaf0;
     height: 100vh;
 }
-
 
 .image {
     background-color: #2421A9;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 20vw;
+    height:20vw;
     align-items: center;
 }
 
@@ -22,26 +20,87 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-family: 'Noto sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
     padding: 5vw;
     margin: 0;
+    font-size: 1.2vw;
 
     opacity: 0;
     animation: fadeInText 1s ease-out forwards;
 }
 
 .text a{
-    font-size: larger;
+    font-size: 2vw;
+    font-weight: bold;
+    width: 80%;
 }
 
-.top{
-    background-color: #2421A9;
+.top, .sectop{
     align-self: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    animation: fadein 1.2s;
+}
+.sectop{
+    background-image: url("../img/coding5.jpg");
+    opacity: 0.8;
+    
+    background-size: 100%;
+    width: 100%;
+    margin: 5vw;
 }
 
+.sectop p{
+    font-size: xx-large;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+}
+
+.exp{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.d1{
+    border: 3px solid #0b0a68;
+    border-radius: 50%;
+    height: 15vw;
+    width:15vw;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    /*background-image: url("../img/letter2.png");*/
+    background-color: antiquewhite;
+
+    animation: fadein 1.2s;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.d1:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.d1 p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+
+}
 
 @keyframes fadeInText {
     100% {
@@ -50,7 +109,14 @@
 
 }
 
-
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 
 
 
