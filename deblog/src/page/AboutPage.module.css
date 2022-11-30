@@ -28,7 +28,7 @@
     margin: 0;
    
     opacity: 0;
-    animation: fadeInText 3s 1s ease-out forwards;
+    animation: fadeInText 1s ease-out forwards;
 }
 
 

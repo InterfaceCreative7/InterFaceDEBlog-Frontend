@@ -50,10 +50,12 @@ code {
 
 textarea {
     resize: none;
+    
 }
 
 .border {
     border-bottom: solid 1px;
+    color: #333;
 }
 
 
@@ -71,5 +73,6 @@ textarea {
         height: 80%;
         overflow-y: auto;
         word-break: break-word;
+        color: #333;
     }
 }

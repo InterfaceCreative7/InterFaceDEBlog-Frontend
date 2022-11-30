@@ -35,6 +35,9 @@ box{
     margin:0 auto;
 }
 
+
+
+
 .end{
     width:100%;
     display:flex;
@@ -88,6 +91,8 @@ p.GuestBook{
     padding:15px;
     border-radius:10px;
     font-size:3vw;
+
+
     p.name{ 
         font-size:3vw;
     }

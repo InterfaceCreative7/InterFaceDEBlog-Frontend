@@ -29,7 +29,13 @@
     align-items: flex-start;
     height: 100%;
     animation: fadeInUp 1s;
+    
+
 }
+ 
+
+
+
 
 @keyframes fadeInUp {
     0% {

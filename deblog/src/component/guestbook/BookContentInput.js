@@ -10,6 +10,7 @@ border-radius:10px;
 font-size:1vw;
 text-align: center;
 
+
 @media (max-width:500px){
     width:60vw;
     height:30vw;
@@ -17,6 +18,8 @@ text-align: center;
     padding:0.5vw;
     border-radius:10px;
     font-size:3vw;
+
+    
 }
 `
 
