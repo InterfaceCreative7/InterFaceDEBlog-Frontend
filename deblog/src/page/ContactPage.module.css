@@ -1,8 +1,15 @@
-.chat{
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .chat_r1 {
     background-color: rgb(211, 211, 211);
     color: rgb(0, 0, 0);

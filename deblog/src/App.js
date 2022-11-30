@@ -7,6 +7,8 @@ import SubmitPage from "./page/SubmitPage.js";
 import ReadyPage from "./page/ReadyPage.js";
 import BodyPage from "./page/BodyPage.js";
 import BookPage from "./page/BookPage.js";
+import CorrectionPage from "./page/CorrectionPage.js";
+import EditPage from "./page/EditPage.js";
 
 
 function App() { //page로 router지정
@@ -21,6 +23,8 @@ function App() { //page로 router지정
         <Route path="/Submit" element={<SubmitPage />} />
         <Route path="/Ready" element={<ReadyPage />} />
         <Route path="/:_id" element={<BodyPage />} />
+        <Route path="/Correction" element={<CorrectionPage />} />
+        <Route path="/Correction/:_id" element={<EditPage />} />
       </Routes>
     </BrowserRouter>
   );

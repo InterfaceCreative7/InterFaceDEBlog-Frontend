@@ -1,4 +1,3 @@
-
 import MenuBar from "../component/menubar/MenuBar.js"
 import classes from "./TechPage.module.css"
 
