@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import api from "../component/server/Auth.js"
 import { useRef } from "react"
 import { Link } from "react-router-dom"
+
 const ReadyPage = () => {
     const body = useSelector(state => state.post.body);
     const title = useSelector(state => state.post.title);
@@ -10,6 +11,7 @@ const ReadyPage = () => {
     const tag = useRef();
     const submitBody = async () => {
         await api.post("posts/upload", {
+
             title: title,
             blogBody: body,
             tag: ["후기"],

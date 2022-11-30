@@ -28,7 +28,7 @@ const EditPage = () => {
             await api.delete("posts/delete", {
                 data: {
                     _id: params._id
-                }
+                }n
             })
         }
         else {
@@ -47,15 +47,15 @@ const EditPage = () => {
                         <div className={classes.modify}>
                             <Link to={`/Correction/ModifyPage/${params._id}`}><button>수정</button></Link>
                             <button onClick={deletPost}>삭제</button>
-                        </div>
-                    </div>
+                        </div >
+                    </div >
                     <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={`${classes.contents} ${classes.same}`}>
                         {body.blogBody}
                     </ReactMarkdown>
-                </div>
-            </div>
+                </div >
+            </div >
 
-        </div>
+        </div >
     )
 }
 
