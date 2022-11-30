@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .main h4 {
@@ -33,4 +34,5 @@
         opacity: 1;
         transform: translateZ(0);
     }
+
 }
