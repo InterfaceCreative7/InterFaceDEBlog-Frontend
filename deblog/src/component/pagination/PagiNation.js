@@ -46,6 +46,8 @@ const StyledPagiNation = styled.div
     align-items: center;
     font-size: 1rem;
     font-family: Gulim, "Times New Roman", Georgia, serif;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Jua', sans-serif;
     font-weight: bold;
 
     -webkit-transform: perspective(1px) translateZ(0);

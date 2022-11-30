@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 .main {
     display: flex;
@@ -12,9 +13,10 @@
 
 .image {
     background-color: #2421A9;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 220px;
     height: 220px;
+    align-items: center;
 }
 
 .text {
@@ -22,7 +24,19 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
     padding: 5vw;
+}
+
+.text a{
+    font-size: larger;
+}
+
+.top{
+    background-color: #2421A9;
+    align-self: center;
 }
 
 
