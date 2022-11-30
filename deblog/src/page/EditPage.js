@@ -1,5 +1,6 @@
 import classes from "./EditPage.module.css"
-import MenuBar from "../component/menubar/MenuBar"
+import { Link } from "react-router-dom"
+
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
@@ -24,8 +25,12 @@ const EditPage = () => {
 
     const deletPost = async (event) => {
         if (window.confirm("정말로 삭제하겠습니까?") === true) {
+            console.log(params._id)
             await api.delete("posts/delete", {
-                _id: params._id
+                data: {
+                    _id: params._id
+                }
+
             })
         }
         else {
@@ -42,7 +47,7 @@ const EditPage = () => {
                         <p>{body.writername}</p>
                         <p>{body.writedate?.slice(0, 10)}</p>
                         <div className={classes.modify}>
-                            <button>수정</button>
+                            <Link to={`/Correction/ModifyPage/${params._id}`}><button>수정</button></Link>
                             <button onClick={deletPost}>삭제</button>
                         </div>
                     </div>

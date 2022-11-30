@@ -7,7 +7,9 @@ const BookPage = () => {
     return (
         <div className={classes.main}>
             <MenuBar />
-            <Book />
+            <div className={classes.book}>
+                <Book />
+            </div>
         </div>
     )
 }
