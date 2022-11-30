@@ -6,13 +6,11 @@ justify-content:center;
 font-weight:bold;
 font-size:20px;
 padding:5px;
-{
-    color: #333;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-  }
+color: #333;
+text-decoration: none;
+display: inline-block;
+padding: 5px 0;
+position: relative;
 
 :after {    
     background: none repeat scroll 0 0 transparent;
