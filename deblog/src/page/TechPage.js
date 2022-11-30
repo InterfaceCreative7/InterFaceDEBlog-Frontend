@@ -16,6 +16,7 @@ const TechPage = () => {
     return (
         <div className={classes.main}>
             <MenuBar />
+            <h2>후기</h2>
             <div className={classes.post}>
                 {post.map(element => (
                     <Post

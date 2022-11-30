@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.main h4 {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 .post {
     width: 80%;
     display: flex;
