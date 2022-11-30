@@ -4,11 +4,11 @@ import classes from "./ContactPage.module.css"
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className={classes.main}>
             <MenuBar />
-              <div className={`${classes.chat_r1} ${classes.chat}`}> 
-              인터페이스 동아리방 위치는? 
-              </div> 
+            <div className={`${classes.chat_r1} ${classes.chat}`}>
+                인터페이스 동아리방 위치는?
+            </div>
             <div className={`${classes.chat_l1} ${classes.chat}`}>
                 <Mapping />
                 세종대학교 학생회관 5층 518호야!!
