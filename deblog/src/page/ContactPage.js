@@ -22,7 +22,6 @@ const ContactPage = () => {
                 <div className={`${classes.post} ${classes.chat}`}>
 
                 </div>
-
             </div>
         </div>
 

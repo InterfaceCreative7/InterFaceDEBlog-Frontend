@@ -28,7 +28,7 @@ const EditPage = () => {
             await api.delete("posts/delete", {
                 data: {
                     _id: params._id
-                }n
+                }
             })
         }
         else {

@@ -12,7 +12,6 @@ import EditPage from "./page/EditPage.js";
 import ModifyPage from "./page/ModifyPage.js";
 
 
-
 function App() { //page로 router지정
   return (
     <BrowserRouter>

@@ -33,7 +33,6 @@ const CorrectionPage = () => {
                         }}
                     />))}
             </div>
-
         </div>
     )
 }
