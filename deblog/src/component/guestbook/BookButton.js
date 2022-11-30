@@ -6,6 +6,7 @@ height:5vw;
 border:none;
 background-color:transparent;
 img{
+  width:100%;
     height:100%;
     border-radius:50px;
     background-color:#083AA9;

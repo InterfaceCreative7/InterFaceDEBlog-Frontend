@@ -13,10 +13,11 @@ text-decoration: none;
 `
 
 const Footer = (props) => {
-    const date = new Date()
+    const date = props.value.date.slice(0, 10);
+    console.log(date)
     return (
         <Styledfooter>
-            <p>{props.value}</p> <p>{`${date.getMonth() + 1}월 ${date.getDate()}일 `}</p>
+            <p>{props.value.PostFooter}</p> <p>{date}</p>
         </Styledfooter>
     )
 }

@@ -44,7 +44,7 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Post = (props) => {
-    const { PostTitle, PostFooter, _id } = props.items
+    const { PostTitle, PostFooter, _id, date } = props.items
     const [img, setImg] = useState("/image/tibet.jpg");
     useEffect(() => {
         if (_id === "638756e20f6e752d59f461fa") {
@@ -72,7 +72,7 @@ const Post = (props) => {
             <Styledpost>
                 <img className="PostImage" src={process.env.PUBLIC_URL + img} alt="postImgage"></img>
                 <Title value={PostTitle}></Title>
-                <Footer value={PostFooter}></Footer>
+                <Footer value={{ PostFooter, date }}></Footer>
             </Styledpost>
         </Link>
     )

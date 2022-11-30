@@ -52,7 +52,8 @@ const MainPage = () => {
                             PostTitle: element.title,
                             PostContent: element.blogBody,
                             PostFooter: element.writername,
-                            _id: element._id
+                            _id: element._id,
+                            date: element.updatedAt
                         }}
                     />
                 ))}

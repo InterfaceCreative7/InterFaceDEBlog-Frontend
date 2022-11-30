@@ -60,7 +60,7 @@ p.name{
 
 }
 p.contents{
-    font-size:1.1vw;
+    font-size:1.8vw;
 }
 
 .feedback{

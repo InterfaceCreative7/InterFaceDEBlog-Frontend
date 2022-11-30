@@ -23,7 +23,6 @@ const BodyPage = () => {
         submitData()
     }, [])
     return (
-
         <div className={classes.main}>
             <MenuBar />
             <div className={classes.BodyPage}>
