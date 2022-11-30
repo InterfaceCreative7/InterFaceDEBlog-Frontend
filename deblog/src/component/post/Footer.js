@@ -5,7 +5,9 @@ display:flex;
 font-size:20px;
 justify-content:space-between;
 align-items:center;
-padding:12px;
+
+padding:0 12px;
+
 `
 
 const Footer = (props) => {

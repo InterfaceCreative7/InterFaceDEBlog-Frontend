@@ -1,3 +1,4 @@
+
 import MenuBar from "../component/menubar/MenuBar.js"
 import classes from "./AboutPage.module.css"
 

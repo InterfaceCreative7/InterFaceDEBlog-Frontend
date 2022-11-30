@@ -8,6 +8,8 @@
     background-color: #fffaf0;
     height: 100vh;
     font-size: 20px;
+
+    
 }
 
 
@@ -28,6 +30,10 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: bold;
     padding: 5vw;
+    margin: 0;
+   
+    opacity: 0;
+    animation: fadeInText 3s 1s ease-out forwards;
 }
 
 .text a{
@@ -40,6 +46,19 @@
 }
 
 
+@keyframes fadeInText {
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+ 
+
+
+    
 @media (max-width:500px) {
     .main {
         font-size: 3vw;
@@ -49,4 +68,9 @@
         width: 120px;
         height: 120px;
     }
+
+
+
 }
+
+

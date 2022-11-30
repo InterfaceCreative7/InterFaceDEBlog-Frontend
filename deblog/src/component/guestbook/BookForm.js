@@ -19,11 +19,7 @@ align-items:center;
     display:flex;
 }
 @media (max-width:500px){
-    justify-content:start;
-    width:100vw;
-    height:200px;
-    margin:0;
-    padding:0;
+
     font-size:30%;
 }
 `
