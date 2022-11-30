@@ -27,6 +27,7 @@ function App() { //page로 router지정
         <Route path="/Correction" element={<CorrectionPage />} />
         <Route path="/Correction/:_id" element={<EditPage />} />
         <Route path="/Correction/ModifyPage/:_id" element={<ModifyPage />} />
+
       </Routes>
     </BrowserRouter>
   );

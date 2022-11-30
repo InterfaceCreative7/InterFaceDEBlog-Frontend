@@ -10,6 +10,7 @@ const ReadyPage = () => {
     const tag = useRef();
     const submitBody = async () => {
         await api.post("posts/upload", {
+
             title: title,
             blogBody: body,
             tag: ["후기"],

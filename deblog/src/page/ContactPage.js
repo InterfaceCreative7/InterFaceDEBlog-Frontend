@@ -4,6 +4,7 @@ import classes from "./ContactPage.module.css"
 
 const ContactPage = () => {
     return (
+
         <div className={classes.contact}>
             <MenuBar />
             <div className={classes.main}>

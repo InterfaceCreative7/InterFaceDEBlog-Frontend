@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+
     animation: fadeInUp 2s;
 }
 
 .main div {
     font-family: 'Do Hyeon', sans-serif;
+
 }
 
 .chat {
