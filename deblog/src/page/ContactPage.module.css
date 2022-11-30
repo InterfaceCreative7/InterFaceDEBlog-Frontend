@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    animation: fadeInUp 2s;
+}
+
+.main div {
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 .chat {
@@ -16,7 +21,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 27%;
+    width: 23%;
     margin-left: 55%;
     margin-right: 40%;
     text-align: center;
@@ -33,7 +38,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 40%;
+    width: 36%;
     height: 100%;
     margin-top: 5%;
     margin-left: 10%;
@@ -41,7 +46,7 @@
     text-align: left;
     outline: none;
     font-size: 2vw;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 100px 100px 100px 100px;
     border: 3px solid #fff;
     border-bottom: none;
 }
@@ -52,7 +57,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 27%;
+    width: 23%;
     margin-top: 5%;
     margin-left: 55%;
     margin-right: 40%;
@@ -70,7 +75,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 40%;
+    width: 36%;
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 70%;
@@ -88,7 +93,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 27%;
+    width: 23%;
     margin-top: 5%;
     margin-left: 55%;
     margin-right: 40%;
@@ -106,7 +111,7 @@
     display: flex;
     align-items: center;
     padding: 3%;
-    width: 40%;
+    width: 36%;
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 70%;
@@ -118,4 +123,14 @@
     border-bottom: none;
 }
 
-@media(width-max: 500px) {}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}

@@ -20,17 +20,19 @@ const CorrectionPage = () => {
 
     return (
         <div className={classes.main}>
-            {post.map(element => (
-                <Post
-                    key={element._id}
-                    items={{
-                        PostImgae: element.imageUrl,
-                        PostTitle: element.title,
-                        PostContent: element.blogBody,
-                        PostFooter: element.writername,
-                        _id: element._id
-                    }}
-                />))}
+            <div className={classes.post}>
+                {post.map(element => (
+                    <Post
+                        key={element._id}
+                        items={{
+                            PostImgae: element.imageUrl,
+                            PostTitle: element.title,
+                            PostContent: element.blogBody,
+                            PostFooter: element.writername,
+                            _id: element._id
+                        }}
+                    />))}
+            </div>
         </div>
     )
 }

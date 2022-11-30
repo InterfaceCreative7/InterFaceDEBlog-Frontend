@@ -9,6 +9,7 @@ import BodyPage from "./page/BodyPage.js";
 import BookPage from "./page/BookPage.js";
 import CorrectionPage from "./page/CorrectionPage.js";
 import EditPage from "./page/EditPage.js";
+import ModifyPage from "./page/ModifyPage.js";
 
 
 function App() { //page로 router지정
@@ -25,6 +26,7 @@ function App() { //page로 router지정
         <Route path="/:_id" element={<BodyPage />} />
         <Route path="/Correction" element={<CorrectionPage />} />
         <Route path="/Correction/:_id" element={<EditPage />} />
+        <Route path="/Correction/ModifyPage/:_id" element={<ModifyPage />} />
       </Routes>
     </BrowserRouter>
   );

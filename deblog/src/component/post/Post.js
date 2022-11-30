@@ -42,7 +42,7 @@ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Post = (props) => {
-    const { PostTitle, PostContent, PostFooter, imageUrl, _id } = props.items
+    const { PostTitle, PostFooter, _id } = props.items
     return (
         <Link to={`/${_id}`}>
             <Styledpost>

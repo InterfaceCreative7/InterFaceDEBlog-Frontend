@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Styledpost = styled.div`
 width: 350px;
-
 margin-right:25px;
 margin-left:25px;
 font-family: 'Do Hyeon', sans-serif;

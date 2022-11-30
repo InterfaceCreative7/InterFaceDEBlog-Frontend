@@ -39,7 +39,7 @@ opacity: 1;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
-  transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity;
 } 
 }
 `
