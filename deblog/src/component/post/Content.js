@@ -4,6 +4,7 @@ const Styledcontent = styled.div`
 display:flex;
 justify-content:center;
 padding:5px;
+color: #333;
 text-decoration: none;
 `
 
@@ -14,3 +15,11 @@ const Content = (props) => {
 }
 
 export default Content
+
+/*
+
+
+
+
+
+*/

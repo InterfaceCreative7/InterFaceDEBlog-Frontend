@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+code {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.main {
+    display: flex;
+}
+
+.write {
+    background-color: floralwhite;
+}
+
+.writename {
+    width: 80%;
+}
+
+.show {
+    background-color: whitesmoke;
+}
+
+.same {
+    font-family: 'Noto Serif KR', serif;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.title {
+    width: 80%;
+    font-size: 2.75rem;
+    padding: 0px;
+}
+
+.contents {
+    width: 80%;
+    font-size: 1.8rem;
+    padding: 0px;
+    height: 80%;
+    overflow-y: auto;
+    word-break: break-word;
+}
+
+.bisector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 929px;
+}
+
+textarea {
+    resize: none;
+}
+
+.border {
+    border-bottom: solid 1px;
+}
+
+.modify {
+    border-radius: 25px;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    transition: background-color 0.5s;
+}
+
+.modify:hover {
+    cursor: pointer;
+    background-color: #F8E5A2;
+}
+
+@media (max-width:500px) {
+    .title {
+        width: 80%;
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    .contents {
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 0px;
+        height: 80%;
+        overflow-y: auto;
+        word-break: break-word;
+    }
+}

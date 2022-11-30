@@ -6,8 +6,18 @@
     height: 100%;
 }
 
+.modify button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.modify button:hover {
+    cursor: pointer;
+}
+
 .BodyPage {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +26,7 @@
 .middle {
     width: 300px;
     display: flex;
+    justify-content: space-around;
 }
 
 .middle p {

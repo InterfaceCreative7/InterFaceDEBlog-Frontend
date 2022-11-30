@@ -1,21 +1,26 @@
-import MenuBar from "../component/menubar/MenuBar.js"
-import classes from "./TechPage.module.css"
 import { useEffect, useState } from "react"
-import api from "../component/server/Auth.js"
-import Post from "../component/post/Post.js"
+import Post from "../component/edit/EditPost"
+import api from "../component/server/Auth"
+import classes from "./Correction.module.css"
 
-const TechPage = () => {
-    const [post, setPost] = useState([]);
+
+
+const CorrectionPage = () => {
+    const [post, setPost] = useState([])
     useEffect(() => {
-        api.get("posts/findall/?title=dataType&value=User")
-            .then(res => {
-                const { data } = res;
-                setPost(data)
-            })
+        const submitData = async () => {
+            await api.get("posts/findall/?title=dataType&value=User")
+                .then(res => {
+                    const { data } = res;
+                    setPost(data)
+                })
+        }
+        submitData();
     }, [])
+
     return (
         <div className={classes.main}>
-            <MenuBar />
+
             <div className={classes.post}>
                 {post.map(element => (
                     <Post
@@ -27,11 +32,10 @@ const TechPage = () => {
                             PostFooter: element.writername,
                             _id: element._id
                         }}
-                    />
-                ))}
+                    />))}
             </div>
         </div>
     )
 }
 
-export default TechPage
+export default CorrectionPage

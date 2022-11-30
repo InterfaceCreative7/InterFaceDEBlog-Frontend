@@ -7,9 +7,6 @@
     align-items: center;
     background-color: #fffaf0;
     height: 100vh;
-    font-size: 20px;
-
-    
 }
 
 
@@ -31,9 +28,9 @@
     font-weight: bold;
     padding: 5vw;
     margin: 0;
-   
+
     opacity: 0;
-    animation: fadeInText 3s 1s ease-out forwards;
+    animation: fadeInText 1s ease-out forwards;
 }
 
 .text a{
@@ -55,10 +52,10 @@
 
 
 
- 
 
 
-    
+
+
 @media (max-width:500px) {
     .main {
         font-size: 3vw;
@@ -72,5 +69,3 @@
 
 
 }
-
-
