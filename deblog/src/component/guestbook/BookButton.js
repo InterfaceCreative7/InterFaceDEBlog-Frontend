@@ -1,19 +1,17 @@
 import styled from "styled-components";
 
 const StyledBookButton = styled.button`
-width:6vw;
 height:5vw;
 
 border:none;
 background-color:transparent;
 img{
-    device-width:100%;
     height:100%;
     border-radius:50px;
     background-color:#083AA9;
     float:
-    .{
-        background: rgb(0,172,238);
+    {
+      background: rgb(0,172,238);
       background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
         width: 130px;
         height: 40px;
@@ -21,12 +19,6 @@ img{
         padding: 0;
         border: none;
         
-      }
-    span {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 100%;
       }
       :before,after {
         position: absolute;
