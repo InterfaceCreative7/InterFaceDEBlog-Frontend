@@ -14,7 +14,18 @@ width:40vw;
 height:20vw;
 margin-right:1vw;
 margin-top:5vw;
+animation: fadeInUp 1s;
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
 
 
 background-color: #fffaf0;

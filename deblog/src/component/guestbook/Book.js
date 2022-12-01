@@ -14,7 +14,6 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-contents:center;
-
 @media (max-width:500px){
     width:80vw;
     margin:auto;
