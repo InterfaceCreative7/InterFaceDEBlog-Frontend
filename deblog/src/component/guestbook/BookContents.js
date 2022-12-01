@@ -31,12 +31,23 @@ animation: fadeInUp 1s;
 background-color: #fffaf0;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 list-style:none;
+groove { border-style: groove; }
+:hover{
+    transform: scale(1.15);
+  transition-duration: 0.5s;
+}
+}
+  
+
+
+
 .start{
     width:100%;
     display:flex;
     justify-content:start;
     align-items: center;
     border-bottom:0.1px solid;   
+    
 }
 
 
@@ -44,12 +55,16 @@ box{
     width:300px;
     height:300px;
     margin:0 auto;
+    position: absolute;
 }
+
+
 
 .end{
     width:100%;
     display:flex;
-    justify-content:right;
+    justify-content:center;
+    
 }
 
 p{
@@ -99,6 +114,9 @@ p.GuestBook{
     padding:15px;
     border-radius:10px;
     font-size:3vw;
+    
+
+
     p.name{ 
         font-size:3vw;
     }

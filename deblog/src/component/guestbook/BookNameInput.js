@@ -19,6 +19,7 @@ margin-bottom:1vw;
     border-radius:10px;
     font-size:3vw;
     
+    
 }
 `
 
