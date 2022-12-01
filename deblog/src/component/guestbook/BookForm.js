@@ -14,6 +14,14 @@ width:100vw;
 height:30vw;
 justify-content:center;
 align-items:center;
+text-align: center; margin-top: 20px;
+animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}
+    
+@keyframes motion 
+0% {margin-top: 0px;}
+100% {margin-top: 10px;}
+
+
 
 .input{
     display:flex;

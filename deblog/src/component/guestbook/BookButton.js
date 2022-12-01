@@ -89,6 +89,8 @@ img:hover{
     device-width:100%;
     height:100%;
     background-color:#002E94;
+
+    
 }
 
 @media (max-width:500px){
